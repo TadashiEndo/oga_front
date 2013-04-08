@@ -15,11 +15,10 @@
 <div id="demo-page" data-role="page" data-theme="d" data-url="demo-page">
     <div data-role="header" data-theme="b">
         <h1>ホーム</h1>
-        <a class="ui-icon-nodisc" href="#left-panel" data-iconpos="notext" data-icon="arrow-r" data-theme="d" data-shadow="false" data-iconshadow="false">Open left panel</a>
-        <a class="ui-icon-nodisc" href="#right-panel" data-iconpos="notext" data-icon="arrow-l" data-theme="d" data-shadow="false" data-iconshadow="false">Open right panel</a>
+        <a class="ui-icon-nodisc" href="#left-panel" data-iconpos="notext" data-icon="arrow-l" data-theme="d" data-shadow="false" data-iconshadow="false">Open left panel</a>
+        <a class="ui-icon-nodisc" href="#right-panel" data-iconpos="notext" data-icon="arrow-r" data-theme="d" data-shadow="false" data-iconshadow="false">Open right panel</a>
          <!-- 検索BOX -->
-        <label for="search-basic">Search Input:</label>
-        <input type="search" name="search" id="search-basic" value="" style="size: 20"/>
+        <input type="search" name="search" id="search-basic" data-mini="true" value="" />
          <!-- 検索BOX-END -->
 
     </div>
@@ -43,20 +42,26 @@
         </div>
         <div id="set1" data-role="collapsible" data-collapsed="true">
                 <h3>イベント</h3>
-                <p>2013.4.6&nbsp;勉強会&nbsp;in&nbsp;浦安</p>
+                <ul data-role="listview" data-inset="true" data-theme="d">
+                  <li><a href="index.html">2013.4.6&nbsp;勉強会&nbsp;in&nbsp;浦安</a></li>
+                </ul>
         </div>
     </div>
     <!-- アコーディオン-END-->
     <div id="set" data-role="collapsible-set" data-content-theme="d">
         <div id="set" data-role="collapsible" data-collapsed="true">
                 <h3>遠藤幼稚園</h3>
-                <p>交換日誌（１）</p>
-                <p>イベント</p>
+                <ul data-role="listview" data-inset="true" data-theme="d">
+                  <li><a href="index.html">交換日誌（１）</a></li>
+                  <li><a href="index.html">イベント</a></li>
+                </ul>
         </div>
         <div id="set" data-role="collapsible" data-collapsed="true">
                 <h3>浦安幼稚園</h3>
-                <p>交換日誌（２）</p>
-                <p>イベント</p>
+                <ul data-role="listview" data-inset="true" data-theme="d">
+                  <li><a href="index.html">交換日誌（２）</a></li>
+                  <li><a href="index.html">イベント</a></li>
+                </ul>
         </div>
     </div>
 
@@ -71,12 +76,16 @@
         <div id="set" data-role="collapsible-set" data-content-theme="d">
             <div id="set1" data-role="collapsible" data-collapsed="true">
                 <h3>遠藤幼稚園</h3>
-                <p>ほげほげ花子先生</p>
-                <p>じろう先生</p>
+                <ul data-role="listview" data-inset="true" data-theme="d">
+                  <li><a href="index.html">ほげほげ花子先生</a></li>
+                  <li><a href="index.html">じろう先生</a></li>
+                </ul>
             </div>
             <div id="set2" data-role="collapsible" data-collapsed="true">
                 <h3>おがっぷ幼稚園</h3>
-                <p>ふがふが太郎先生</p>
+                <ul data-role="listview" data-inset="true" data-theme="d">
+                  <li><a href="index.html">ふがふが太郎先生</a></li>
+                </ul>
             </div>
         </div>
         <!-- アコーディオン-END-->
@@ -84,6 +93,8 @@
     </div>
 <!-- /panel -->
   <div data-role="footer" data-id="foo1" data-position="fixed">
+    <a href="http://www.yahoo.co.jp/"><img src="http://banner.mobilesystem.jp/images/sample/94-26_01.gif" /></a>
+    <a href="http://www.yahoo.co.jp/"><img src="http://banner.mobilesystem.jp/images/sample/94-26_02.gif" /></a>
     <div data-role="navbar">
       <ul>
         <li><a href="/doc/jquery_mobile/components/toolbars/footer_persist/" class="ui-btn-active ui-state-persist">Friends</a></li>
